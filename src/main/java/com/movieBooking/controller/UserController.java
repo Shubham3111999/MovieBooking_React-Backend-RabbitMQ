@@ -58,14 +58,14 @@ public class UserController {
 		userService.deleteUser(userId);
 	}
 	
-	@PutMapping("/updateUser/{userId}")
-	public User updateUser(@Valid @RequestBody UserDto userDto,@PathVariable int userId, BindingResult result) {
+	@PutMapping("/updateUser/{userName}")
+	public User updateUser(@Valid @RequestBody UserDto userDto,@PathVariable String userName, BindingResult result) {
 		
 		if(result.hasErrors()) {
 			throw new ValidationException("Validation failed: " + result.getFieldErrors());
 		}
 		
-		return userService.updateUser(userDto,userId);
+		return userService.updateUser(userDto,userName);
 	}
 	
 	@GetMapping("/addLikedMovie/{userName}")

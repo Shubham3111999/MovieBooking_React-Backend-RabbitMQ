@@ -38,7 +38,6 @@ public class MovieController {
 			throw new ValidationException("Validation failed: " + result.getFieldErrors());
 		}
 
-		
 		return movieService.addMovie(movieDto);
 	}
 	

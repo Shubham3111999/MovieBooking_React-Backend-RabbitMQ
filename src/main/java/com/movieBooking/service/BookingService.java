@@ -43,7 +43,7 @@ public class BookingService {
 	
 
 //	@Autowired
-//	private KafkaTemplate<String, String> kafkaTemplate;
+//	private KafkaTemplate<String, String> kafkaTemplate;r
 	
 	@Autowired
 	private  RabbitTemplate rabbitTemplate;

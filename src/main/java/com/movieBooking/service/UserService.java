@@ -91,8 +91,8 @@ public class UserService {
 		userRepository.deleteById((long)userId);
 	}
 
-	public User updateUser(@Valid UserDto userDto, int userID) {
-		User user=getUserById(userID);
+	public User updateUser(@Valid UserDto userDto, String userName) {
+		User user=getUserByEmail(userName);
 		
 		user.setEmail(userDto.getEmail());
 		user.setPassword(passwordEncoder.encode(userDto.getPassword()));
