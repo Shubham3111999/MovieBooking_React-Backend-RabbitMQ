@@ -27,12 +27,12 @@ spring:
 #         key-serializer: org.apache.kafka.common.serialization.StringSerializer
 #         value-serializer: org.apache.kafka.common.serialization.StringSerializer
    rabbitmq:
-    uri: ${rabbitmq_uri:amqps://crriowln:FcTMeTBWOqJSjcCRm4Aanwm6K3540VC5@fuji.lmq.cloudamqp.com/crriowln}
+    uri: ${rabbitmq_uri:amqps://xgokoegj:FygnPyOE4Dj3BZ7ib1W-O6XOlaBV3sXW@fuji.lmq.cloudamqp.com/xgokoegj}
     connection-timeout: 5000
     addresses: ${rabbitmq_addresses:fuji.lmq.cloudamqp.com}
-    username: ${rabbitmq_username:crriowln}
-    password: ${rabbitmq_password:FcTMeTBWOqJSjcCRm4Aanwm6K3540VC5}
-    virtual-host: ${rabbitmq_virtual-host:crriowln}
+    username: ${rabbitmq_username:xgokoegj}
+    password: ${rabbitmq_password:FygnPyOE4Dj3BZ7ib1W-O6XOlaBV3sXW}
+    virtual-host: ${rabbitmq_virtual-host:xgokoegj}
     
 
    main:
